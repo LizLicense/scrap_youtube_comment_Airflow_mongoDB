@@ -51,7 +51,7 @@ Set the Airflow home directory to point to your project:
 change the directory to the airflow folder
 
 ```bash
-export AIRFLOW_HOME=/Users/[username]/.../ASSIGNMENT1/airflow
+export AIRFLOW_HOME=/Users/[username]/.../airflow
 ```
 
 Initialize the Airflow database:
@@ -85,14 +85,14 @@ Start the Airflow webserver:
 change the directory to the airflow folder
 
 ```bash
-export AIRFLOW_HOME=/Users/[username]/.../ASSIGNMENT1/airflow
+export AIRFLOW_HOME=/Users/[username]/.../airflow
 airflow webserver --port 8080
 ```
 
 In a new terminal, start the Airflow scheduler:
 
 ```bash
-export AIRFLOW_HOME=/Users/[username]/.../ASSIGNMENT1/airflow
+export AIRFLOW_HOME=/Users/[username]/.../airflow
 airflow scheduler
 ```
 
@@ -115,7 +115,7 @@ In the Airflow UI:
 Alternatively, you can trigger the DAG from the command line:
 
 ```bash
-export AIRFLOW_HOME=/Users/[username]/.../ASSIGNMENT1/airflow   
+export AIRFLOW_HOME=/Users/[username]/.../airflow   
 airflow dags trigger is459_assignment_youtube
 ```
 

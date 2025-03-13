@@ -85,7 +85,7 @@ def fetch_and_save_youtube_data(**kwargs):
     """
     try:
         # Read topic from file
-        with open('/Users/[username]/.../ASSIGNMENT1/topic.txt', 'r') as f:
+        with open('/Users/[username]/.../topic.txt', 'r') as f:
             topic = f.read().strip()
         
         print(f"Successfully read topic: {topic}")
@@ -94,7 +94,7 @@ def fetch_and_save_youtube_data(**kwargs):
         videos_data = get_youtube_data(topic)
         
         # Save to JSON file
-        output_file = f'/Users/[username]/.../ASSIGNMENT1/{topic}.json'
+        output_file = f'/Users/[username]/.../{topic}.json'
         with open(output_file, 'w') as f:
             json.dump(videos_data, f, indent=2)
         

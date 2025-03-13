@@ -14,11 +14,11 @@ def load_data_to_mongodb(**kwargs):
     mongo_uri = os.getenv('MONGO_URI', 'mongodb://localhost:27017/')
     
     # Read topic from file
-    with open('/Users/[username]/.../ASSIGNMENT1/topic.txt', 'r') as f:
+    with open('/Users/[username]/.../topic.txt', 'r') as f:
         topic = f.read().strip()
     
     # JSON file path
-    json_file = f'/Users/[username]/.../ASSIGNMENT1/{topic}.json'
+    json_file = f'/Users/[username]/.../{topic}.json'
     
     # Check if JSON file exists, if not, fetch the data first
     if not os.path.exists(json_file):
