@@ -38,7 +38,7 @@ pip install apache-airflow pymongo python-dotenv google-api-python-client
 Create a `.env` file in the ASSIGNMENT1 directory with the following content:
 
 ```
-YOUTUBE_API_KEY=your_youtube_api_key_here
+YOUTUBE_API_KEY=your_youtube_api_key_here (default is 27017)
 MONGO_URI=mongodb://localhost:27017/
 ```
 
@@ -48,8 +48,10 @@ Replace the values with your actual YouTube API key and MongoDB connection strin
 
 Set the Airflow home directory to point to your project:
 
+change the directory to the airflow folder
+
 ```bash
-export AIRFLOW_HOME=/Users/lizliao/Downloads/ASSIGNMENT1/airflow
+export AIRFLOW_HOME=/Users/[username]/.../ASSIGNMENT1/airflow
 ```
 
 Initialize the Airflow database:
@@ -80,15 +82,17 @@ Edit the `topic.txt` file to contain your desired search topic (e.g., "earthquak
 
 Start the Airflow webserver:
 
+change the directory to the airflow folder
+
 ```bash
-export AIRFLOW_HOME=/Users/lizliao/Downloads/ASSIGNMENT1/airflow
+export AIRFLOW_HOME=/Users/[username]/.../ASSIGNMENT1/airflow
 airflow webserver --port 8080
 ```
 
 In a new terminal, start the Airflow scheduler:
 
 ```bash
-export AIRFLOW_HOME=/Users/lizliao/Downloads/ASSIGNMENT1/airflow
+export AIRFLOW_HOME=/Users/[username]/.../ASSIGNMENT1/airflow
 airflow scheduler
 ```
 
@@ -111,7 +115,7 @@ In the Airflow UI:
 Alternatively, you can trigger the DAG from the command line:
 
 ```bash
-export AIRFLOW_HOME=/Users/lizliao/Downloads/ASSIGNMENT1/airflow
+export AIRFLOW_HOME=/Users/[username]/.../ASSIGNMENT1/airflow   
 airflow dags trigger is459_assignment_youtube
 ```
 

@@ -10,7 +10,7 @@ def get_youtube_data(topic, max_results=100):
     """
     Fetch YouTube data for a given topic
     """
-    YOUTUBE_API_KEY = 'AIzaSyC8KPMHgq91ahAbipjP6bTDzd5kHwJmo6U' #CHANGE THIS TO YOUR OWN API KEY
+    YOUTUBE_API_KEY = 'AI00000000...' #CHANGE THIS TO YOUR OWN API KEY
     # Get API key from environment variable
     if not YOUTUBE_API_KEY:
         raise ValueError("YouTube API key not found in environment variables")
@@ -85,7 +85,7 @@ def fetch_and_save_youtube_data(**kwargs):
     """
     try:
         # Read topic from file
-        with open('/Users/lizliao/Downloads/ASSIGNMENT1/topic.txt', 'r') as f:
+        with open('/Users/[username]/.../ASSIGNMENT1/topic.txt', 'r') as f:
             topic = f.read().strip()
         
         print(f"Successfully read topic: {topic}")
@@ -94,7 +94,7 @@ def fetch_and_save_youtube_data(**kwargs):
         videos_data = get_youtube_data(topic)
         
         # Save to JSON file
-        output_file = f'/Users/lizliao/Downloads/ASSIGNMENT1/{topic}.json'
+        output_file = f'/Users/[username]/.../ASSIGNMENT1/{topic}.json'
         with open(output_file, 'w') as f:
             json.dump(videos_data, f, indent=2)
         
