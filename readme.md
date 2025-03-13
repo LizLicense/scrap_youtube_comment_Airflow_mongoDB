@@ -109,7 +109,7 @@ Log in with the admin credentials you created earlier.
 ### 3. Run the DAG
 
 In the Airflow UI:
-1. Find the DAG named `is459_assignment_youtube`
+1. Find the DAG named `is459_assignment_youtube`(this is the customised name of the DAG in the youtube_dag.py file)
 2. Click the "Play" button to trigger the DAG manually
 
 Alternatively, you can trigger the DAG from the command line:
